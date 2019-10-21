@@ -5,3 +5,7 @@ table
 h1{
     color : blue ;
 }
+div.a
+{
+    transform : scale(1.5);
+}
