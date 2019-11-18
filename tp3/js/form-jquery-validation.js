@@ -16,20 +16,21 @@ $( document ).ready(function() {
     $('#myModal').modal("show");
     }
 
-   if ($("#date").val()==""){
+   else if ($("#date").val()==""){
     $(".modal-body").text("Veuillez saisir votre date de naissance");
     $('#myModal').modal("show");
     }
 
-   if ($("#email").val()==""){
+   else if ($("#email").val()==""){
     $(".modal-body").text("Veuillez saisir votre email");
     $('#myModal').modal("show");
     }
 
-   if ($("#adresse").val()==""){
+   else if($("#adresse").val()==""){
     $(".modal-body").text("Veuillez saisir votre adresse");
     $('#myModal').modal("show");
     }
+
 
 
 
