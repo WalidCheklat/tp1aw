@@ -34,37 +34,58 @@
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="main.js"></script>-->
+        
+        <script src="js/form-jquery-validation.js"></script>
+
     </head>
+
     <body>        
-        <h1>tp3</h1>
+        <h1>Formulire v2</h1>
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                  One of three columns
+            <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Nom</label>
+                  <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
                 </div>
-                <div class="col-sm">
-                  One of three columns
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Prénom</label>
+                  <input type="text" class="form-control" id="prénom" placeholder="Entrez votre prénom">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Date de naissance</label>
+                    <input type="date" class="form-control" id="date" placeholder="Entrez votre date de naissance">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Entrez votre email">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Adresse</label>
+                    <input type="text" class="form-control" id="adresse" placeholder="Entrez votre adresse">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
                 </div>
-                <div class="col-sm">
-                  One of three columns
+              </form>
+          </div>
+          
+          <div class="modal" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Corps de la modal à modifier après validation du formulaire</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
-
+            </div>
           </div>
-          <form>
-            <div class="form-group">
-              <label for="formGroupExampleInput">Nom</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Entrer votre nom">
-            </div>
-            <div class="form-group">
-              <label for="formGroupExampleInput2">Prénom</label>
-              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Entrer votre prénom">
-            </div>
-          </form>
-
-
-
-
 
         
     </body>
