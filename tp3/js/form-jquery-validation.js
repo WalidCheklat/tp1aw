@@ -31,6 +31,11 @@ $( document ).ready(function() {
     $('#myModal').modal("show");
     }
 
+    else {
+    $(".modal-body").text("Bienvenu");
+    $('#myModal').modal("show");
+    }
+
 
 
 
