@@ -37,10 +37,13 @@
         
         <script src="js/form-jquery-validation.js"></script>
 
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+    
     </head>
 
     <body>        
-        <h1>Formulire v2</h1>
+        <h1>Formulaire v2</h1>
         <div class="container">
             <form>
                 <div class="form-group">
@@ -80,7 +83,7 @@
                   <p>Corps de la modal à modifier après validation du formulaire</p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">OK</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
                   <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
                 </div>
               </div>
