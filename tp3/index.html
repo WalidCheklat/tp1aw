@@ -20,6 +20,8 @@
 
         <!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/gps.js"></script>
+
 
         <style>
           body{
@@ -64,6 +66,9 @@
                   <div class="form-group">
                     <label for="formGroupExampleInput">Adresse</label>
                     <input type="text" class="form-control" id="adresse" placeholder="Entrez votre adresse">
+                    <div class="form-group col-1">
+                      <button class="btn btn-warning" type="button" id="gps">📍 GPS</button>
+                  </div>
                   </div>
                   <button type="submit" class="btn btn-primary">Sign in</button>
                 </div>
