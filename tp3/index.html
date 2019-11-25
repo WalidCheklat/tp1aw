@@ -67,7 +67,10 @@
                     <label for="formGroupExampleInput">Adresse</label>
                     <input type="text" class="form-control" id="adresse" placeholder="Entrez votre adresse">
                     <div class="form-group col-1">
-                      <button class="btn btn-warning" type="button" id="gps">📍 GPS</button>
+                      <button class="btn btn-warning" type="button" onclick="getLocation()" id="gps">📍 GPS</button>
+                  </div>
+                  <div id="map">
+                    
                   </div>
                   </div>
                   <button type="submit" class="btn btn-primary">Sign in</button>
