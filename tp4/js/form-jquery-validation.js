@@ -35,7 +35,7 @@ $( document ).ready(function() {
 
     else {
     $(".modal-title").text("Bienvenu " + $("#prénom").val());
-    $(".modal-body").html("Vous êtes né le " + $("#date").val() + " et vous habitez à " + "(" + $("#adresse").val() + ")" + '<img src="https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg" width = "400" height = "300" />');
+    $(".modal-body").html("Vous êtes né le " + $("#date").val() + " et vous habitez à " + "(" + $("#adresse").val() + ")" + '<img src="'+a+'" width = "400" height = "300" />');
     $('#myModal').modal("show");
     }
 
