@@ -6,6 +6,8 @@ $( document ).ready(function() {
     $("form").on("submit", function (event) {
         event.preventDefault();
 
+       
+
         var a = "https://maps.googleapis.com/maps/api/staticmap?markers="+ $("#adresse").val()+ "&zoom=10&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg";
 
    if ($("#nom").val()==""){
