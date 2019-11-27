@@ -21,6 +21,8 @@
         <!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/gps.js"></script>
+        <script src="js/store.js"></script>
+
 
 
         <style>
@@ -47,10 +49,23 @@
     <body>        
         <h1>Formulaire v2</h1>
         <div class="container">
+               
             <form>
                 <div class="form-group">
                   <label for="formGroupExampleInput">Nom</label>
                   <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                  <p id="compteur">0 Caractère(s) </p>
+                  
+                  <script>
+                  $(document).ready(function(e) {
+                  $('#nom').keyup(function() {
+                    var nombreCaractere = $("#nom").val().length;
+                    var msg = ' '+ nombreCaractere + ' caractère(s)';
+                  $('#compteur').text(msg);
+                  })
+                  })
+                  </script>
+
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput2">Prénom</label>
@@ -69,9 +84,10 @@
                     <div class="form-group col-1">
                       <button class="btn btn-warning" type="button" onclick="getLocation()" id="gps">📍 GPS</button>
                   </div>
-                  <div id="map">
-                    
+                  
+                  <div id="map">  
                   </div>
+                  
                   </div>
                   <button type="submit" class="btn btn-primary">Sign in</button>
                 </div>
