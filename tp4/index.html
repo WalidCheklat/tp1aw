@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
+        <title>TP4</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -102,11 +102,32 @@
                   </div>
                   
                   <div>
-                  <button type="submit" class="btn btn-primary">Sign in</button>
+                  <button type="submit" class="btn btn-primary" id="btn">Sign in</button>
                 </div>
+
 
               </form>
           </div>
+
+          <hr>
+          <div id="json">
+            <h1>Liste des contacts</h1>
+              <table class= "table table-bordered" width = "100%">
+                <thead>
+                <tr>
+                  <td><strong>Nom</strong></td>
+                  <td><strong>Prénom</strong></td>
+                  <td><strong>Date de naissance</strong></td>
+                  <td><strong>Adresse</strong></td>
+                  <td><strong>Mail</strong></td>
+                </tr>
+              </thead>
+              <tbody id="tdata">
+
+              </tbody>
+
+              </table>
+            </div>
           
           <div class="modal" tabindex="-1" role="dialog" id="myModal">
             <div class="modal-dialog" role="document">
@@ -127,6 +148,8 @@
               </div>
             </div>
           </div>
+
+          
 
         
     </body>
