@@ -12,12 +12,30 @@ $( document ).ready(function() {
 
      });
 
-    $("form").on("submit", function (event) {
-        event.preventDefault();
+     $("#btn").click(function(){
+      // var n = $("#nom").val();
+      // var p = $("#prénom").val();
+      // var d = $("#date").val();
+      // var a = $("#adresse").val();
+      // var m = $("#email").val();
+      
 
-        
+
+      contactStore.add($("#nom"), $("#prénom"), $("#date"), $("#adresse"), $("#email"));
+      contactStore.getList();
+      //$("table tbody").html($("#nom")+$("#prénom")+$("#date")+$("#adresse")+$("#email"));
+
+      document.querySelector("table tbody").innerHTML = document.querySelector("table tbody").innerHTML +
+      '<tr><td>'+$("#nom").val()+'</td><td>'+$("#prénom").val()+'</td><td>'+$("#date").val()+'</td><td>'+$("#adresse").val()+'</td><td>'+$("#email").val()+'</td></tr>';
+
+     });
+
+
      
-        var a = "https://maps.googleapis.com/maps/api/staticmap?markers="+ $("#adresse").val()+ "&zoom=10&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg";
+    $("form").on("submit", function (event) {
+       event.preventDefault();
+             
+        //var a = "https://maps.googleapis.com/maps/api/staticmap?markers="+ $("#adresse").val()+ "&zoom=10&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg";
 
    if ($("#nom").val()==""){
     $(".modal-body").text("Veuillez saisir votre nom");
