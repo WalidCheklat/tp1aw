@@ -50,37 +50,50 @@
         <h1>Formulaire v2</h1>
         <div class="container">
                
-            <form>
+            <form id="form">
+
                 <div class="form-group">
                   <label for="formGroupExampleInput">Nom</label>
                   <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
-                  <p id="compteur">0 Caractère(s) </p>
-                  
-                  <script>
-                  $(document).ready(function(e) {
-                  $('#nom').keyup(function() {
-                    var nombreCaractere = $("#nom").val().length;
-                    var msg = ' '+ nombreCaractere + ' caractère(s)';
-                  $('#compteur').text(msg);
-                  })
-                  })
-                  </script>
-
+                  <div id="nbrcar1"></div>
+                 <!-- <script>
+                      $(document).ready(function(e) {
+                      $('#nom').keyup(function() {
+                        var nombreCaractere = $('#nom').val().length;
+                        var msg = ' '+ nombreCaractere + ' caractère(s)';
+                      $('#compteur').text(msg);
+                      })
+                      })
+                   </script>-->
                 </div>
+                
+
                 <div class="form-group">
                   <label for="formGroupExampleInput2">Prénom</label>
-                  <input type="text" class="form-control" id="prénom" placeholder="Entrez votre prénom">
+                  <input type="text" class="form-control" id="prénom" placeholder="Entrez votre prénom" >
+                  <div id="nbrcar2"></div>
+                </div>
+                
+
                   <div class="form-group">
                     <label for="formGroupExampleInput">Date de naissance</label>
-                    <input type="date" class="form-control" id="date" placeholder="Entrez votre date de naissance">
+                    <input type="date" class="form-control" id="date" placeholder="Entrez votre date de naissance">               
                   </div>
+
                   <div class="form-group">
                     <label for="formGroupExampleInput">Email</label>
                     <input type="text" class="form-control" id="email" placeholder="Entrez votre email">
+                    <div id="nbrcar3"></div>                   
                   </div>
+
+
                   <div class="form-group">
                     <label for="formGroupExampleInput">Adresse</label>
                     <input type="text" class="form-control" id="adresse" placeholder="Entrez votre adresse">
+                    <div id="nbrcar4"></div>
+                  </div>
+
+
                     <div class="form-group col-1">
                       <button class="btn btn-warning" type="button" onclick="getLocation()" id="gps">📍 GPS</button>
                   </div>
@@ -88,9 +101,10 @@
                   <div id="map">  
                   </div>
                   
-                  </div>
+                  <div>
                   <button type="submit" class="btn btn-primary">Sign in</button>
                 </div>
+
               </form>
           </div>
           
